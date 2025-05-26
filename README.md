@@ -39,3 +39,7 @@ The goal of this project is to demonstrate practical VLSI design skills includin
 This project serves as a learning and showcase platform for digital design engineers and students interested in ASIC Physical Design.
 
 
+
+
+
+
