@@ -36,7 +36,83 @@ The goal of this project is to demonstrate practical VLSI design skills includin
 - DRC, LVS, and Antenna rule checks
 - Final GDSII generation
 
-This project serves as a learning and showcase platform for digital design engineers and students interested in ASIC Physical Design.
+
+# 🔹 1. RTL Design
+Verilog source files for functionality
+Required Files:
+i2c_master.v
+i2c_slave.v
+i2c_top.v (optional wrapper for integration)
+i2c_defs.vh (optional, for constants/macros)
+
+# 🔹 2. Testbench (for functional verification)
+Verifies RTL behavior before synthesis
+Required Files:
+tb_i2c.v
+Stimulus files (stimulus_master.txt, etc.)
+Makefile or simulation script (e.g., run_vsim.sh)
+
+# 🔹 3. Synthesis (Design Compiler or Fusion Compiler)
+RTL → Gate-level netlist
+Required Files:
+synthesis_script.tcl
+dc_constraints.sdc (timing/area constraints)
+library.db (technology library)
+i2c_top.v (RTL top)
+i2c_netlist.v (output from synthesis)
+
+# 🔹 4. Formal Verification (Formality)
+Checks RTL = Netlist (equivalence)
+Required Files:
+formality_script.tcl
+i2c_top.v (RTL)
+i2c_netlist.v (gate-level)
+library.db
+
+# 🔹 5. Static Timing Analysis (PrimeTime)
+Checks timing after synthesis or post-layout
+Required Files:
+pt_script.tcl
+dc_constraints.sdc
+i2c_netlist.v
+.spef (optional, from PD)
+.sdf (optional, back-annotated delay)
+
+# 🔹 6. Physical Design (Fusion Compiler)
+Netlist → GDSII
+Required Files:
+floorplan.tcl
+placement.tcl
+cts.tcl
+routing.tcl
+pd_constraints.sdc
+i2c_netlist.v
+technology.lef or milkyway library
+i2c.def (optional intermediate DEF output)
+i2c_final.gds (output)
+
+# 🔹 7. Physical Verification (Calibre)
+DRC, LVS, Antenna
+Required Files:
+i2c_final.gds
+i2c_final.v (post-layout netlist)
+i2c.spice (optional, for LVS)
+Rule deck files:
+drc.rules
+lvs.rules
+antenna.rules
+Output logs:
+drc.log
+lvs.log
+antenna.log
+
+# 🔹 8. Project Documentation
+Helpful Files:
+README.md
+architecture_diagram.png (block diagram)
+report_summary.pdf 
+LICENSE 
+
 
 
 
