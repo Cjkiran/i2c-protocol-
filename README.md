@@ -54,6 +54,9 @@ Makefile or simulation script (e.g., run_vsim.sh)
 
 # 🔹 3. Synthesis (Design Compiler or Fusion Compiler)
 RTL → Gate-level netlist
+
+![Screenshot 2025-05-28 144107](https://github.com/user-attachments/assets/4aed6c77-ec8a-4177-aa2c-cfe84b29c40a)
+
 Required Files:
 synthesis_script.tcl
 dc_constraints.sdc (timing/area constraints)
@@ -63,6 +66,10 @@ i2c_netlist.v (output from synthesis)
 
 # 🔹 4. Formal Verification (Formality)
 Checks RTL = Netlist (equivalence)
+![Screenshot 2025-05-28 142733](https://github.com/user-attachments/assets/d16f67e1-7510-4153-a0f4-e5045918e1cc)
+
+![Screenshot 2025-05-28 142754](https://github.com/user-attachments/assets/79eebc97-254f-438f-953f-5234c7cd6085)
+
 Required Files:
 formality_script.tcl
 i2c_top.v (RTL)
