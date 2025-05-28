@@ -1,4 +1,4 @@
-# i2c-protocol
+
 RTL to GDS2 @2025-06
 
 I2C stands for Inter-Integrated Circuit. It's a serial communication protocol used for short-distance communication between integrated circuits. This protocol facilitates data exchange between a master device and multiple slave devices over a shared bus, often utilizing two lines: Serial Clock (SCL) and Serial Data (SDA). 
@@ -57,6 +57,12 @@ RTL → Gate-level netlist
 
 ![Screenshot 2025-05-28 144107](https://github.com/user-attachments/assets/4aed6c77-ec8a-4177-aa2c-cfe84b29c40a)
 
+![POWER (1)](https://github.com/user-attachments/assets/8d6649d1-7f0b-4cf0-b03e-0f755fdbafc3)
+
+
+
+
+
 Required Files:
 synthesis_script.tcl
 dc_constraints.sdc (timing/area constraints)
@@ -78,6 +84,18 @@ library.db
 
 # 🔹 5. Static Timing Analysis (PrimeTime)
 Checks timing after synthesis or post-layout
+
+![Screenshot 2025-05-28 154229](https://github.com/user-attachments/assets/8e34ece2-42aa-4d93-b5b7-1051d7926b9c)
+
+![Screenshot 2025-05-28 154254](https://github.com/user-attachments/assets/04c6c10d-c822-4400-9a80-a4bd5c439e2d)
+
+![Screenshot 2025-05-28 154410](https://github.com/user-attachments/assets/f8f4ea1b-7f9e-4d94-8781-443c1ead7735)
+
+![Screenshot 2025-05-28 142950](https://github.com/user-attachments/assets/b422af08-61e6-413a-afd1-000b1ec8c4c7)
+
+![Screenshot 2025-05-28 143021](https://github.com/user-attachments/assets/3c598f72-2947-4966-9587-afee2493a2eb)
+
+
 Required Files:
 pt_script.tcl
 dc_constraints.sdc
