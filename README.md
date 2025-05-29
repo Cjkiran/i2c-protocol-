@@ -59,10 +59,6 @@ RTL → Gate-level netlist
 
 ![POWER (1)](https://github.com/user-attachments/assets/8d6649d1-7f0b-4cf0-b03e-0f755fdbafc3)
 
-
-
-
-
 Required Files:
 synthesis_script.tcl
 dc_constraints.sdc (timing/area constraints)
