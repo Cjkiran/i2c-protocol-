@@ -159,7 +159,7 @@ Helpful Files:
 README.md
 architecture_diagram.png (block diagram)
 report_summary.pdf 
-LICENSE 
+LICENSE @ VIT-10.10.5.247 -24MVD0166  
 
 
 
