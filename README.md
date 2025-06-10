@@ -1,5 +1,4 @@
-
-# RTL to GDS2 @2025-06
+# RTL to GDS2 @2025-2026
 
 I2C stands for Inter-Integrated Circuit. It's a serial communication protocol used for short-distance communication between integrated circuits. This protocol facilitates data exchange between a master device and multiple slave devices over a shared bus, often utilizing two lines: Serial Clock (SCL) and Serial Data (SDA). 
 
